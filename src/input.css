@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  //background-color: #2090d0;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  letter-spacing: .1rem;
+  
+}
+.logo::after{
+  content: 'Fan Made';
+  font-size: 16px;
+  margin-left: 10px;
+  background-image: linear-gradient(to right, cyan, blue);
+  padding: 4px;
+  border-radius: 18px;
+
+}
+#hero-img{
+  animation: wiggle 1.3s ease-in-out infinite;
+}
+#info{
+  color: rgb(0, 251, 255);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+  @keyframes wiggle {
+    
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+
+    .music-player {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #fff;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px #b3e5fc;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      z-index: 10;
+     font-weight: bold;
+    }
+    .music-player button {
+      
+      background: #2677ea;
+      border: none;
+      color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background 0.2s;
+     
+    }
+    .music-player button:hover {
+      background: #b3e5fc;
+      
+    }
+    .music-player span {
+      font-size: 1rem;
+      color: #2196f3;
+    }
+
+
+//npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch

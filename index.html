@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resident Playbook</title>
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+
+ <audio id="ost" src="/ost.mp3"></audio>
+   
+
+  <div class="w-full flex flex-col md:flex-row h-25 bg-blue-800 justify-evenly items-center">
+    <h1 class="logo text-2xl text-amber-50 font-extrabold pt-10">Resident Playbook</h1>
+    <nav class="fixed top-3 z-100 ">
+      <ul class="flex gap-5 bg-gradient-to-l to-cyan-500 from-blue-500 rounded-full px-3 py-1.5 mx-auto items-center justify-center font-black z-100" >
+        <li><a class="text-amber-50 hover:text-cyan-200 duration-200 ease-in" href="#home">Home</a></li>
+        <li><a class="text-amber-50 hover:text-cyan-200 duration-200 ease-in" href="#overview">Overview</a></li>
+        <li><a class="text-amber-50 hover:text-cyan-200 duration-200 ease-in" href="#obgyn">OBGYN</a></li>
+       
+      </ul>
+    </nav>
+  </div>  
+
+    <!-- ost -->
+     
+
+  <section id="home" class="s2 w-auto md:w-full h-screen flex items-center bg-[url(/img/hero1.jpg)] md:bg-[url(/img/bg2.jpg)] bg-no-repeat bg-center bg-cover ">
+    <div class="bg-blue-400/50 h-full w-full flex justify-evenly items-center text-2xl text-amber-50 ">  
+      <div class=" relative">
+       <h1 class="max-w-2xl text-4xl text-amber-50 font-bold">Resident Playbook</h1>
+       <p class="text-lg bg-blue-800/60 rounded-xl flex items-center justify-center">2025 ‧ Medical drama ‧ 1 season</p>
+       <img id="hero-img" src="/img/mini.jpg" class="h-64 mx-auto mt-40 md:hidden rounded-xl shadow-2xl shadow-cyan-200 active:shadow-xl active:shadow-cyan-300 ">
+      </div>
+       <div>
+       <img  src="/img/hero.jpeg" class="h-96 rounded-2xl md:flex hidden shadow-2xl">
+      </div>  
+   </div>
+  </section>
+
+   <section id="overview" class="h-full md:hidden bg-cyan-800">
+    <h1 class="text-xl text-center text-amber-50 py-10">Overview: About Resident Playbook</h1>
+    <div class="max-w-2xl flex flex-col gap-5 justify-center items-center ">
+    <img src="/img/g.gif" class="w-55 rounded-tr-2xl">
+    <h3 class="text-amber-50 font-black">Drama</h3>
+    <p class="md:text-right text-amber-50 ml-5 "> South Korean medical drama, a spin-off of "Hospital Playlist," focusing on the lives and friendships of four first-year <span>OB-GYN</span> residents at the Jongno branch of Yulje Medical Center</p>
+    <img src="/img/g2.gif" class="w-auto rounded-tr-2xl">
+    <p class="md:text-right text-amber-300 ml-5 font-bold"> Ratings: 8.1/10 IMDb</p>
+    <img src="/img/g3.gif" class="w-55 rounded-tr-2xl">
+    </div>  
+  
+     <div class="relative w-80 overflow-hidden rounded-lg shadow-lg mx-auto mt-5">
+     <h3 class="text-center text-amber-50 ">Comments by fans</h3>
+    <!-- Carousel inner container -->
+    <div id="carousel" class="flex transition-transform  duration-500 ease-in-out" style="transform: translateX(0%)">
+      <img src="/img/review1.png" class=" h-auto object-contain" />
+      <img src="/img/review2.png" class=" h-auto object-contain" />
+      <img src="/img/review3.png" class=" h-auto object-contain" />
+      <img src="/img/review1.png" class=" h-auto object-contain" />
+      <img src="/img/review2.png" class=" h-auto object-contain" />
+      <img src="/img/review3.png" class=" h-auto object-contain" />
+    </div>
+
+    <!-- Previous Button -->
+    <button onclick="prevSlide()" class="absolute left-0 top-1/2 -translate-y-1/2 bg-cyan-500 bg-opacity-70 px-2 py-1 text-sm font-bold text-gray-800 hover:bg-opacity-100">
+      ‹
+    </button>
+
+    <!-- Next Button -->
+    <button onclick="nextSlide()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-cyan-500 bg-opacity-70 px-2 py-1 text-sm font-bold text-gray-800 hover:bg-opacity-100">
+      ›
+    </button>
+  </div>
+
+  
+  </section>
+  <!-- overview section desktop view -->
+    <section class="h-auto bg-cyan-900 hidden md:block">
+    <h2 class="text-2xl text-amber-50 text-center font-semibold pt-6">Overview | About</h2>
+    <div class="flex gap-10 justify-around py-5">
+     <img src="/img/g.gif" class="w-50 rounded-tr-2xl">
+     <img src="/img/g2.gif" class="w-55 rounded-tr-2xl object-contain">
+     <img src="/img/g3.gif" class="w-50 rounded-tr-2xl ">
+    </div>
+    <div class="flex gap-10 justify-between px-5 text-center ">
+      <p class="text-amber-50 w-100"><span class="text-cyan-400 text-xl font-semibold">DRAMA:</span> South Korean medical drama, a spin-off of "Hospital Playlist," focusing on the lives and friendships of four first-year </p>
+      <p class="text-amber-50 w-100"><span class="text-amber-300 text-xl font-semibold">Ratings:</span> 8.1/10 IMDb</p>
+      <p class="text-amber-50 w-100">Comments and Reviews</p>
+    </div>
+
+     <div class="flex flex-wrap gap-10 justify-evenly py-10">
+      <img src="/img/review1.png" class=" h-40" />
+      <img src="/img/review2.png" class=" h-40" />
+      <img src="/img/review3.png" class=" h-40" />
+     </div>
+  </section>  
+ 
+
+  <section id="obgyn" class="h-screen bg-[url(/img/obgyn.webp)] bg-cover bg-no-repeat bg-right ">
+    <div class="h-auto lg:h-full bg-amber-800/30 pt-6 px-4 md:px-50 text-amber-50">
+      <h1 class="text-2xl font-medium text-amber-50 text-center bg-linear-to-r to-cyan-300 from-blue-700 rounded-full  w-70 mx-auto mb-6">OBGYN PROFILES</h1>
+      <div class="" id="ob">
+      <img src="/img/cast/cast1.jpg"  class="size-[180px] object-cover float-left  rounded-lg pr-2">
+      <p id="info" class="h-50">Gu Do-won <br> <span class="text-sm text-amber-50 p-1.5">33 years old <br>
+        4th Year Resident <br>
+        Actor:Jung Joon-Won
+      </span></p>
+     
+      <img src="/img/cast/cast2.webp"  class="size-[180px] object-cover float-right rounded-lg pl-2 lg:-mt-50">
+      <p id="info" class="h-50 text-right lg:mr-45  lg:-mt-50">Oh I-yeong  <br> <span class="text-sm text-amber-50 p-1.5">27 years old <br>
+        1st Year Resident <br>
+        Actor:Go Youn-jung
+      </span></p>
+      <img src="/img/cast/cast3.webp"  class="size-[180px] object-cover float-left rounded-lg pr-2">
+       <p id="info" class="h-50">Pyo Nam-kyung <br> <span class="text-sm text-amber-50 p-1.5">26 years old <br>
+        1st Year Resident <br>
+        Actor:Shin Si-ah
+      </span></p>
+      <img src="/img/cast/cast4.jpg" class="size-[180px] object-cover float-right rounded-lg pl-2 lg:-mt-50">
+       <p id="info" class="h-50  text-right lg:mr-45 lg:-mt-50">Kim Sa-bi <br><span class="text-sm text-amber-50 p-1.5">24 years old <br>
+        1st Year Resident <br>
+        Actor:Han Ye-ji
+      </span></p>
+       <img src="/img/cast/cast5.jpg" class="size-[180px] object-cover float-left rounded-lg pr-2 mb-5">
+       
+       <p id="info" class="h-50">Um Jae-il <br> <span class="text-sm text-amber-50 p-1.5">31 years old <br>
+        1st Year Resident <br>
+        Actor:Kang You-seok
+      </span></p>
+       </div>
+      </div>
+    </div>
+  </section>
+  
+ 
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-1 py-3 h-full w-screen  bg-cyan-500" >
+    
+    <div class="max-w-80 h-80 ">
+        <img class="h-full w-full rounded-lg object-cover" src="/img/hero1.jpg" alt="">
+    </div>
+     <div class="max-w-80 h-80 ">
+        <img class="h-full w-full rounded-lg object-cover active:object-[30%_40%] " src="/img/cast/g2.jpeg" alt="">
+    </div>
+   
+     <div class="max-w-80 h-80 ">
+        <img class="h-full w-full rounded-lg object-cover " src="/img/cast/cast3.webp" alt="">
+    </div>
+   
+     <div class="max-w-80 h-80">
+        <img class="h-full w-full rounded-lg object-cover " src="/img/cast/g4.webp" alt="">
+    </div>
+    <div class="max-w-80 h-80 ">
+        <img class="h-full w-full rounded-lg object-cover" src="/img/cast/g6.jpg" alt="">
+    </div>
+     <div class="max-w-80 h-80 ">
+        <img class="h-full w-full rounded-lg object-cover active:object-[30%_40%] " src="/img/cast/g7.jpeg" alt="">
+    </div>
+   
+     <div class="max-w-80 h-80 ">
+        <img class="h-full w-full rounded-lg object-cover " src="/img/cast/g5.webp" alt="">
+    </div>
+   
+     <div class="max-w-80 h-80">
+        <img class="h-full w-full rounded-lg object-cover " src="/img/cast/cast-2.png" alt="">
+    </div>
+   </div>
+  
+   <footer class="text-center bg-amber-600 text-sm ">I DO NOT OWN ANY COPYRIGHTS | LICENSE IN ANY CONTENT THIS IS ONLY FOR SHOWCASE PROJECTS</footer>
+
+   <div class="music-player">
+    <button id="playPauseBtn">&#9658;</button>
+    <span>Play OST</span>
+    <audio id="bgMusic" src="/ost.mp3"></audio>
+  </div>
+
+   <script>
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const bgMusic = document.getElementById('bgMusic');
+    let isPlaying = false;
+
+    playPauseBtn.addEventListener('click', function() {
+      if (!isPlaying) {
+        bgMusic.play();
+        playPauseBtn.innerHTML = '&#10073;&#10073;';
+      } else {
+        bgMusic.pause();
+        playPauseBtn.innerHTML = '&#9658;';
+      }
+      isPlaying = !isPlaying;
+    });
+
+    bgMusic.addEventListener('ended', function() {
+      playPauseBtn.innerHTML = '&#9658;';
+      isPlaying = false;
+    });
+
+    const carousel = document.getElementById('carousel');
+    let index = 0;
+
+    function showSlide(i) {
+      const total = carousel.children.length;
+      index = (i + total) % total;
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      showSlide(index + 1);
+    }
+
+    function prevSlide() {
+      showSlide(index - 1);
+    }
+
+      function toggleAudio() {
+    const audio = document.getElementById('ost');
+    const link = document.getElementById('audioToggle');
+
+    if (audio.paused) {
+      audio.play();
+      link.textContent = 'Pause';
+      alert("Playing: When the day comes by TXT")
+    } else {
+      audio.pause();
+      link.textContent = 'Play';
+    }
+  }
+  
+
+  </script>
+</body>
+
+
+</html>
